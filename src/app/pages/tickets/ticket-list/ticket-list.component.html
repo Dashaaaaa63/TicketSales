@@ -1,0 +1,15 @@
+<div class="d-flex flex-wrap justify-content-around">
+  <div
+    class="ticket-item col-3 m-2"
+    *ngFor="let ticket of tickets; let i = index"
+  >
+    <div class="ticket-title">{{ ticket.name }}</div>
+    <div class="ticket-img">
+      <img
+        src="/assets/img/{{ ticket.img }}"
+        alt="{{ ticket.name }}"
+        class="w-100"
+      />
+    </div>
+  </div>
+</div>
